@@ -11,7 +11,7 @@ public class PersonController {
 
     @RequestMapping(value = "/getData", produces = "application/json")
     public String getData(){
-        return "hi";
+        return "hi AWS !! get the data !!";
     }
 
     @RequestMapping(value = "/test1", produces = "application/json")
