@@ -3,6 +3,7 @@ java:
   maven_version: '3.3.9'
 tests:
   - mvn verify
+  - mvn install
 cache:
   key_paths:     # Define the files Solano will use to determine when to rebuild your cache
   - pom.xml
