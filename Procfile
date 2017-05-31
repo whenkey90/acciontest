@@ -1,0 +1,1 @@
+web: java -Dserver.port=5000 -jar target/gs-accessing-data-rest-0.1.2.jar
