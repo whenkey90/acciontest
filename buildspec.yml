@@ -1,19 +1,11 @@
 version: 0.2
 
-env:
-  variables:
-    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
-
 phases:
-  install:
+  post_build:
     commands:
-      - apt-get update -y
-      - apt-get install -y maven
-  pre_build:
-    commands:
-      - echo Nothing to do in the pre_build phase...
-  build: mvn assembly:assembly -DdescriptorId=jar-with-dependencies
+      - echo Build completed on `date`
+      - mvn package
 artifacts:
   files:
-    - target/gs-accessing-data-rest-0.1.2.jar
+    - target/gs-accessing-data-rest.jar
   discard-paths: yes
