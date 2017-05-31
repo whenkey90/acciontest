@@ -12,14 +12,7 @@ phases:
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase...
-  build:
-    commands:
-      - echo Build started on `date`
-      - mvn install
-    post_build:
-      commands:
-        - echo Build completed on `date`
-        - mvn package
+  build: mvn assembly:assembly -DdescriptorId=jar-with-dependencies
 artifacts:
   files:
     - target/gs-accessing-data-rest-0.1.2.jar
