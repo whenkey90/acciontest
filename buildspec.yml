@@ -1,11 +1,8 @@
 version: 0.2
-
 phases:
-build:
+  build:
     commands:
-      - echo Build completed on `date`
       - mvn package
 artifacts:
   files:
-    - target/gs-accessing-data-rest.jar
-discard-paths: yes
+    - target/accion-test.jar
