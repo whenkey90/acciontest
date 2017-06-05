@@ -6,5 +6,4 @@ phases:
 artifacts:
   files:
     - 'target/**/*'
-   #- 'target/accion-test-1.0-SNAPSHOT.jar'
-   discard-paths: yes
+discard-paths: yes
