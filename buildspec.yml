@@ -5,5 +5,5 @@ phases:
       - mvn package
 artifacts:
   files:
-    - '**/*'
-    - 'target/accion-test-1.0-SNAPSHOT.jar'
+    - 'target/**/*'
+   #- 'target/accion-test-1.0-SNAPSHOT.jar'
